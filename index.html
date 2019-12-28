@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <title>Python Text to QR Code Generator Web App </title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <style>
+        .footer {
+          position: fixed;
+          left: 0;
+          bottom: 0;
+          width: 100%;
+          background-color: gainsboro;
+          color: black;
+          text-align: center;
+        }
+        </style>  
+</head>
+  <body >
+      <center>
+  <h1>Text-To-QR-Code</h1>
+    <form target="_blank" action="http://127.0.0.1:5000/getqr" method="post">
+              <input type="text" name="url" id="url" placeholder="Enter Text Here" size="50px" required/><br>
+
+           <button name="submit" type="submit" value="submit">Submit</button>
+           
+    </form>
+    <br>
+    <div class="footer">
+       <footer>
+         
+  
+
+        <p>Contact information: <a href="https://www.linkedin.com/in/tejasghalsasi/" target="_blank">Linkedin</a> </p>
+      </footer>
+    </div>
+ 
+    
+    </center>
+  </body >
+</html>
