@@ -16,13 +16,18 @@ def getqr():
     return send_from_directory('.',
                                'text.png', mimetype='image/png')
 
-
-    #path = r'C:\Users\TEJAS\Desktop\test.png'
-    #return send_file(path, as_attachment=True)
+@app.route('/getqr_rest')
+def getqr_rest(text):
+    inputtext=text
+    qr= qrcode.make(inputtext)
     
-    #return send_file( , mimetype='image/png')
+    qr.save('text.png')
+    #filename='text.png'
+    return send_from_directory('.',
+                               'text.png', mimetype='image/png')
+
+
 
 if __name__ == '__main__':
     app.run()
-
 
