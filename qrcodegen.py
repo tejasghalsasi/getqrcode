@@ -27,7 +27,14 @@ def getqr_rest(text):
                                'text.png', mimetype='image/png')
 
 
+#Test function to test the api to call the function 
+#@app.route('/')
+#def helloworld():
+#    input='Tejas Ghalsasi Says Hello World 2020'
+#    return getqr_rest(input)
+
+
+
 
 if __name__ == '__main__':
     app.run()
-
